@@ -1,0 +1,215 @@
+/* style.css */
+
+@import "retina";
+
+$width: 768px;
+
+@mixin texture-wood {
+  background: url(../img/wood_texture.jpg);
+}
+
+@mixin center-horizontal {
+  margin: 0px auto;
+}
+
+@mixin text-shadow($color) {
+  text-shadow: 0px 1px $color;
+}
+
+/* ==========================================================================
+   Misc.
+   ========================================================================== */
+
+.content {
+  width: $width;
+  font-family: 'Overlock', cursive;
+  font-weight: bold;
+  font-size: 16pt;
+  @include text-shadow(rgba(255, 255, 255, 0.4));
+  @include center-horizontal;
+}
+
+.shadow {
+  box-shadow: 0px 2px 5px #000;
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+header {
+  top: 0px;
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  @include texture-wood;
+}
+
+#headercontent {
+  width: $width;
+  padding-top: 5px;
+  @include center-horizontal;
+
+   > a > img {
+    width: 117px;
+    height: 80px;
+    float: left; 
+  }
+
+  div {
+    display: inline-block;
+    padding-left: 30px;
+    padding-bottom: 18px;
+
+    .addthis_button_tweet {
+      width: 80px !important;
+    }
+
+    .addthis_counter {
+      width: 50px !important;
+    }
+  }
+}
+
+.navitem {
+  display: inline-block;
+  padding-top: 20px;
+  margin-left: 45px;
+  color: black;
+  font-size: 18pt;
+  font-family: 'Londrina Solid', cursive;
+  text-decoration: none;
+  @include text-shadow(rgba(255, 255, 255, 0.8));
+
+  &:hover {
+    border-bottom: 1px dotted; 
+  }
+}
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+#content {
+  margin-top: 90px;
+}
+
+section, footer {
+  overflow: auto;
+  padding: 20px 0 70px 0;
+}
+
+/* ==========================================================================
+   Herd Absurd
+   ========================================================================== */
+
+#herdabsurd {
+  background: url(../img/wood_texture_blue.jpg);
+
+  > .content {
+    color: white;
+    @include text-shadow(rgba(0, 0, 0, 0.4));
+
+    h2 {
+      color: rgb(244, 224, 54);
+      text-align: center;
+    }
+    > .background {
+      background-position: center center;
+      background-repeat: no-repeat;
+      height: 419px;
+      @include at2x("../img/herdabsurd", png, 650px, 419px);
+      @include center-horizontal;
+    }
+
+    > .video {
+      display: block;
+      @include center-horizontal;
+    }
+
+    > span.screenshots {
+      @include center-horizontal;
+
+      > a {
+        margin: 6px;
+        width: 178px;
+        height: 134px;
+
+        > img {
+          box-shadow: 1px 1px 5px #000;
+        }
+      }
+    }
+
+    > .features {
+      font-size: 14pt;
+      @include center-horizontal;
+
+
+      > ul {
+        float: left;
+        width: 44%;
+      } 
+
+      > .icon {
+        margin: 10px 5px 15px 38px; 
+      }
+    }
+  }
+}
+
+
+/* ==========================================================================
+   About
+   ========================================================================== */
+
+#about {
+  background: url(../img/wood_texture_yellow.jpg);
+
+  > .content {
+    padding-top: 70px;
+
+    > .logo {
+      display: block;
+      @include center-horizontal;
+    } 
+
+    > .info {
+      display: inline-block;
+      margin-top: 15px;
+
+      > img {
+        float: left; 
+        margin-right: 10px;
+      } 
+      
+      > p {
+        margin-top: 10px;
+      }
+    }
+  }
+
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+  padding-bottom: 20px;
+  @include texture-wood;
+}
+
+#contact {
+  > p {
+    font-size: 12pt;
+    text-align: center;
+    margin: 0px;
+    padding: 2px;
+    
+    > a {
+      color: black; 
+    }
+  }
+}
+
