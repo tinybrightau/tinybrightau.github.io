@@ -64,10 +64,10 @@ header {
 
 .navitem {
   display: inline-block;
-  padding-top: 25px;
-  margin-left: 110px;
+  padding-top: 20px;
+  margin-left: 96px;
   color: black;
-  font-size: 18pt;
+  font-size: 22pt;
   font-family: 'Londrina Solid', cursive;
   text-decoration: none;
   @include text-shadow(rgba(255, 255, 255, 0.8));
