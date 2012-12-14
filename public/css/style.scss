@@ -46,6 +46,7 @@ header {
   width: 100%;
   height: 90px;
   position: fixed;
+  z-index: 99;
   @include texture-wood;
 }
 
@@ -59,26 +60,12 @@ header {
     height: 80px;
     float: left; 
   }
-
-  div {
-    display: inline-block;
-    padding-left: 30px;
-    padding-bottom: 18px;
-
-    .addthis_button_tweet {
-      width: 80px !important;
-    }
-
-    .addthis_counter {
-      width: 50px !important;
-    }
-  }
 }
 
 .navitem {
   display: inline-block;
   padding-top: 20px;
-  margin-left: 45px;
+  margin-left: 110px;
   color: black;
   font-size: 18pt;
   font-family: 'Londrina Solid', cursive;
@@ -125,6 +112,18 @@ section, footer {
       height: 419px;
       @include at2x("../img/herdabsurd", png, 650px, 419px);
       @include center-horizontal;
+
+      > .addthis_toolbox {
+        float: right;
+
+        * {
+          display: inline-block;
+        }
+
+        .addthis_button_tweet {
+          margin: 5px 0 0 5px;
+        }
+      }
     }
 
     > .video {
