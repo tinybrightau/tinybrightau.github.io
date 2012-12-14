@@ -96,8 +96,14 @@ html xmlns:fb="http://ogp.me/ns/fb#"
           a href="media.zip" Media kit
         p All works © Tinybright 2012
     javascript:
+      var gid = 'UA-36220115-1',
+          addthis_config = {
+            data_ga_property: gid,
+            data_ga_social: true
+          };
+
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-36220115-1']);
+      _gaq.push(['_setAccount', gid]);
       _gaq.push(['_trackPageview']);
 
       (function() {
