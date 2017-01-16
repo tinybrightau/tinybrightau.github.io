@@ -29,7 +29,7 @@ $width: 768px;
   font-family: 'Overlock', cursive;
   font-weight: bold;
   font-size: 16pt;
-  @include text-shadow(rgba(255, 255, 255, 0.4));
+  //@include text-shadow(rgba(255, 255, 255, 0.4));
   @include center-horizontal;
 }
 
@@ -99,8 +99,8 @@ section, footer {
   background: url(../img/wood_texture_blue.jpg);
 
   > .content {
-    color: white;
-    @include text-shadow(rgba(0, 0, 0, 0.4));
+    color: black;
+    //@include text-shadow(rgba(0, 0, 0, 0.4));
 
     h2 {
       text-align: center;
