@@ -88,13 +88,13 @@ section, footer {
     #herdabsurd > .content > .video {
       display: block;
       margin: 0px auto; }
-    #herdabsurd > .content > span.screenshots {
+    #herdabsurd > .content > .screenshots {
       margin: 0px auto; }
-      #herdabsurd > .content > span.screenshots > a {
-        margin: 6px;
+      #herdabsurd > .content > .screenshots > a {
+        margin: 4px;
         width: 178px;
         height: 134px; }
-        #herdabsurd > .content > span.screenshots > a > img {
+        #herdabsurd > .content > .screenshots > a > img {
           box-shadow: 1px 1px 5px #000; }
     #herdabsurd > .content > .features {
       font-size: 14pt;

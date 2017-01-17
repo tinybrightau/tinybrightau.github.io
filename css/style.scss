@@ -135,11 +135,11 @@ section, footer {
       @include center-horizontal;
     }
 
-    > span.screenshots {
+    > .screenshots {
       @include center-horizontal;
 
       > a {
-        margin: 6px;
+        margin: 4px;
         width: 178px;
         height: 134px;
 
