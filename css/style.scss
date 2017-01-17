@@ -1,6 +1,6 @@
 /* style.css */
 
-@import "retina";
+@import "vendor/retina";
 
 $width: 768px;
 
@@ -35,7 +35,7 @@ $width: 768px;
 
 .shadow {
   box-shadow: 0px 2px 5px #000;
-  behavior: url(css/PIE.htc);
+  behavior: url(css/vendor/PIE.htc);
 }
 
 /* ==========================================================================
