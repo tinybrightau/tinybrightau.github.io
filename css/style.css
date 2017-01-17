@@ -79,12 +79,10 @@ section, footer {
         #herdabsurd > .content > .background {
           background-image: url("../img/herdabsurd@2x.png");
           background-size: 650px 419px; } }
-      #herdabsurd > .content > .background > .addthis_toolbox {
+      #herdabsurd > .content > .background > .fb-like {
         float: right; }
-        #herdabsurd > .content > .background > .addthis_toolbox * {
+        #herdabsurd > .content > .background > .fb-like * {
           display: inline-block; }
-        #herdabsurd > .content > .background > .addthis_toolbox .addthis_button_tweet {
-          margin: 5px 0 0 5px; }
     #herdabsurd > .content > .video {
       display: block;
       margin: 0px auto; }

@@ -117,15 +117,11 @@ section, footer {
       @include at2x("../img/herdabsurd", png, 650px, 419px);
       @include center-horizontal;
 
-      > .addthis_toolbox {
+      > .fb-like {
         float: right;
 
         * {
           display: inline-block;
-        }
-
-        .addthis_button_tweet {
-          margin: 5px 0 0 5px;
         }
       }
     }
